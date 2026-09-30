@@ -56,8 +56,11 @@
 
             <legend>Endereço</legend>
 
+            <h4>
+                O formato abaixo apenas aceita até 9 digitos, 8 sendo números e um '-' (traço) para a separação
+            </h4>
             <label for="cep">CEP:</label>
-            <input type="number" name="cep" placeholder="cep" for="cep" required/>
+            <input type="number" name="cep" placeholder="Somente números" for="cep" pattern="[0-9]{8}" required/>
 
             <br>
             
